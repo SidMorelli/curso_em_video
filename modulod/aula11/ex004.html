@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pesquisa</title>
+</head>
+<body>
+<h1>Pesquisa de moradía</h1>
+Em qual país você mora: <input type="text" id="pais" required>
+<input type="button" onclick="resultado()" value="resultado">
+<div id="res"></div>
+
+
+
+
+<script>
+function resultado() {
+    p = window.document.getElementById('pais')
+    res = window.document.querySelector('div#res')
+    vel = String(pais.value)
+    cond = 'Brasil'
+
+    if (vel == cond) {
+        res.innerHTML = (`Seu país é ${vel}`)
+    }else{
+        res.innerHTML = (`Você é estrangeiro`)
+    }
+
+    
+    
+
+}
+
+
+</script>
+</body>
+</html>

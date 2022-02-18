@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    
+    <h1>Usando operadores no javascript</h1><br>
+
+    <p>Utileze números de 1 a 10:</p>
+
+    <input type = "float" id="numb"> + <input type = "float" id="numb2"> 
+    
+    <button type="button" onclick="myFunction()">Submit</button>
+    
+    <p id="demo"></p>
+    
+    
+    <script>
+    function myFunction() {
+      // Get the value of the input field with id="numb"
+      let x = Number(document.getElementById("numb").value)
+      let y = Number(document.getElementById("numb2").value)
+      // If x is Not a Number or less than one or greater than 10
+      let text;
+      if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid"
+      } else {
+        text = `Soma: x + y = ${x+y}`
+      
+
+      }
+      document.getElementById("demo").innerHTML = text;
+    }
+    </script>
+    
+
+
+
+   
+    
+</body>
+</html>

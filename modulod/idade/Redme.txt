@@ -1,0 +1,6 @@
+Predefinição:Faixas etárias do Brasil
+
+Crianças 0 a 14 anos
+Jovens  15 a 24 anos
+Adultos 25 a 64 anos
+Idosos  acima de 65 anos
